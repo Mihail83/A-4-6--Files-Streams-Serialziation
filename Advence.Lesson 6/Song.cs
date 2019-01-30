@@ -12,5 +12,10 @@ namespace Advence.Lesson_6
        // [NonSerialized]
         [XmlIgnore]
         public string Lyrics;
+
+        public override string ToString()
+        {
+            return $"   {Title} === {Duration}";
+        }
     }
 }
